@@ -1,0 +1,2 @@
+nvcc -O3 -gencode arch=compute_70,code=sm_70 -I/global/homes/i/inisa/spmm/sputnik/ -I/global/homes/i/inisa/spmm/sputnik/sputnik/spmm -L/global/homes/i/inisa/spmm/sputnik/build/sputnik/ -lsputnik  -lcusparse -lcudart  spmm.cu -o out
+nvcc -O3 -gencode arch=compute_70,code=sm_70 -I/global/homes/i/inisa/spmm/sputnik/ -I/global/homes/i/inisa/spmm/sputnik/sputnik/spmm -L/global/homes/i/inisa/spmm/sputnik/build/sputnik/ -lsputnik  -lcusparse -lcudart  spmm.cu -o out
